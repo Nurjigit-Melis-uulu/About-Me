@@ -83,12 +83,24 @@ nav {
     height: 120px;
     position: fixed;
     border-bottom: 20px solid black;
-    top: 0;
+    top: -120px;
     left: 0;
     background-color: orange;
     z-index: 1;
     display: flex;
     flex-flow: row;
+    
+    transition: all 1.3s;
+}
+nav p {
+    letter-spacing: 6px;
+    width: 100px;
+    position: absolute;
+    top: 102px;
+    color: #fff;
+    font-size: 1.1em;
+    left: calc((100% - 100px) / 2);
+    transition: all 1s;
 }
 nav .mini-logo {
     width: calc(100% / 6);
@@ -120,4 +132,45 @@ nav .menu ul li a {
     font-weight: bold;
     font-size: 1.4em;
     line-height: 100px;
+}
+nav:hover {
+    transform: translateY(120px);
+}
+nav:hover p {
+    color: black;
+}
+
+[class^="brashura"] {
+    float: left;
+    width: 180px;
+    height: 300px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+    padding: 20px; 
+}
+.brashura {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 100px 0 200px 100px;
+    transform: skewY(19deg);
+}
+.brashura-2 {
+    margin: 100px 0 200px 0;
+    transform: skewY(-19deg);
+}
+.brashura-2 img {
+    width: 100%;
+}
+.brashura-3 {
+    margin: 100px 0 200px 0;
+    transform: skewY(19deg);
+}
+.brashura-4 {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 100px 0 200px 0;
+    transform: skewY(-19deg);
+}
+.brashura-4 a {
+    text-decoration: none;
+    color: lightseagreen;
 }
